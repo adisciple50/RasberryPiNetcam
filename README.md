@@ -20,7 +20,7 @@ sudo wget https://raw.githubusercontent.com/deddokatana/RasperiPiDoorbell/main.p
 
 ## verify you are happy with the script - optionally perform sanity checks
 
-# your rasperi py will only stay on for 30 seconds(by default) unless you delete the file from the memory card at /etc/main.py after this step.
+# your rasperi pi will only stay on for 30 seconds(by default) unless you delete the file from the memory card at /etc/main.py after this step.
 
 terminal commands:
 

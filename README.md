@@ -8,7 +8,7 @@ connect gpio pins 5 and 6 with a pushbutton, or test by shorting the pins to sim
 make sure your camera is at /dev/video0 and playable in vlc player
 
 
-# your rasperi py will only stay on for 30 seconds unless you delete the file from the memory card at /etc/main.py after this step.
+
 
 ## the time that the video transmitted is a global variable - use this to adjust the shutdown time
 
@@ -19,6 +19,8 @@ cd /etc
 sudo wget https://raw.githubusercontent.com/deddokatana/RasperiPiDoorbell/main.py
 
 ## verify you are happy with the script - optionally perform sanity checks
+
+# your rasperi py will only stay on for 30 seconds(by defualt) unless you delete the file from the memory card at /etc/main.py after this step.
 
 terminal commands:
 

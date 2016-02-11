@@ -12,6 +12,7 @@ make sure your camera is at /dev/video0 and playable in vlc player
 
 
 cd /etc
+
 sudo wget https://raw.githubusercontent.com/deddokatana/RasperiPiDoorbell/main.py
 
 ## verify you are happy with the script - optionally perform sanity checks

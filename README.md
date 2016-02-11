@@ -5,6 +5,9 @@ setup instructions:
 
 connect gpio pins 5 and 6 with a pushbutton, or test by shorting the pins to simulate this.
 
+install vlc player:
+sudo apt-get install vlc
+
 make sure your camera is at /dev/video0 and playable in vlc player
 
 
@@ -25,3 +28,6 @@ sudo wget https://raw.githubusercontent.com/deddokatana/RasperiPiDoorbell/main.p
 terminal commands:
 
 echo "(sleep 5;python scriptname.py)&" >> /etc/rc.local
+
+
+output protocol will be on the rtsp protocol.  port 8554

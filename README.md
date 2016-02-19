@@ -24,3 +24,9 @@ install OBKEY
 bind the buttons key combo to the script: "python ~/Documents/Code/Python/RasberryPiNetcam/Main.py"
 
 # Step 5 - Sort Out Power
+
+sudo apt-get install xfce4-power-manager
+
+adjust power settings.
+
+# Step 6 Test - The Setup!

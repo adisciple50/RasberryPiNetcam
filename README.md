@@ -19,9 +19,9 @@ http://theurbanpenguin.com/wp/index.php/setting-up-a-samba-server-on-raspberry-p
 
 # Step 4 - Keybindings
 
-install OBKEY
+sudo apt-get install obkey
 
-bind the buttons key combo to the script: "python ~/Documents/Code/Python/RasberryPiNetcam/Main.py"
+run it bind the buttons key combo to the script: "python ~/Documents/Code/Python/RasberryPiNetcam/Main.py"
 
 # Step 5 - Sort Out Power
 

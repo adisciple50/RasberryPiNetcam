@@ -30,3 +30,5 @@ sudo apt-get install xfce4-power-manager
 adjust power settings.
 
 # Step 6 Test - The Setup!
+ 
+ check your ~/Pictures folder!

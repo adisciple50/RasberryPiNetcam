@@ -1,8 +1,8 @@
-import RPi.GPIO as GPIO # access the gpio button
-import time # deals with time delays
-import subprocess # issues console commands
-from SimpleCV import Camera # captures images
-import os # file operations
+import RPi.GPIO as GPIO  # access the gpio button
+import time  # deals with time delays
+import subprocess  # issues console commands
+from SimpleCV import Camera  # captures images
+import os  # file operations
 
 # wake from halt
 # http://raspberrypi.stackexchange.com/questions/13203/creating-halt-wake-button

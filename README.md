@@ -3,6 +3,10 @@ Push Button to capture pic to networked folder.
 
 # Step 1 - Download Script
 
+sudo apt-get install python3-pip
+
+pip3 install opencv
+
 cd ~/Documents/Code/Python
 
 git clone https://github.com/deddokatana/RasberryPiNetcam.git
@@ -19,9 +23,9 @@ http://theurbanpenguin.com/wp/index.php/setting-up-a-samba-server-on-raspberry-p
 
 # Step 4 - Keybindings
 
-sudo apt-get install obkey
+install obkey
 
-run it bind the buttons key combo to the script: "python ~/Documents/Code/Python/RasberryPiNetcam/Main.py"
+bind the buttons key combo to the script: "python3 ~/Documents/Code/Python/RasberryPiNetcam/Main.py"
 
 # Step 5 - Sort Out Power
 
@@ -29,6 +33,6 @@ sudo apt-get install xfce4-power-manager
 
 adjust power settings.
 
-# Step 6 Test - The Setup!
+# Step 6 - Test The Setup!
  
  check your ~/Pictures folder!

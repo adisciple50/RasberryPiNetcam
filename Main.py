@@ -15,7 +15,7 @@ cam = Camera()
 
 
 ## settings
-output_folder = "~/DCIM"
+output_folder = "~/Pictures"
 streaming_time = 600
 # in seconds
 
@@ -84,5 +84,4 @@ def sleep_mode():
 
 # main function - so run this script on bootup!
 
-if button_is_pressed():
-    save_image()
+save_image()

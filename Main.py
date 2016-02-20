@@ -60,6 +60,15 @@ def getNextFileName(output_folder):
     output_file_path = os.path.join(output_folder, str(highest_num + 1))
     return output_file_path
 
+def pi_capture_image():
+    with picamera.PiCamera() as camera:
+    camera.resolution = (1024, 768)
+    camera.start_preview()
+    # Camera warm-up time
+    time.sleep(2)
+    filename = getNextFileName(output_folder)+".png"
+    camera.capture(filename)
+
 def save_image(SimpleCVImage=capture_image()):
     filename = getNextFileName(output_folder)+".png"
     SimpleCVImage.save(filename)
@@ -84,4 +93,4 @@ def sleep_mode():
 
 # main function - so run this script on bootup!
 
-save_image()
+pi_capture_image()

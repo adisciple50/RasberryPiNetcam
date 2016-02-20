@@ -63,12 +63,12 @@ def getNextFileName(output_folder):
 
 def pi_capture_image():
     with picamera.PiCamera() as camera:
-    camera.resolution = (1024, 768)
-    camera.start_preview()
-    # Camera warm-up time
-    time.sleep(2)
-    filename = getNextFileName(output_folder)+".png"
-    camera.capture(filename)
+        camera.resolution = (1024, 768)
+        camera.start_preview()
+        # Camera warm-up time
+        time.sleep(2)
+        filename = getNextFileName(output_folder)+".png"
+        camera.capture(filename)
 
 def save_image(SimpleCVImage=capture_image()):
     filename = getNextFileName(output_folder)+".png"

@@ -3,6 +3,7 @@ import time  # deals with time delays
 import subprocess  # issues console commands
 from SimpleCV import Camera  # captures images
 import os  # file operations
+import picamera
 
 # wake from halt
 # http://raspberrypi.stackexchange.com/questions/13203/creating-halt-wake-button

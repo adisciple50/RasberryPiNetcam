@@ -9,7 +9,7 @@ sudo pip3 install opencv
 
 sudo pip3 install picamera
 
-sudo cd ~/Documents/Code/Python
+cd ~/Documents/Code/Python
 
 git clone https://github.com/deddokatana/RasberryPiNetcam.git
 

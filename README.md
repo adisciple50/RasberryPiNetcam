@@ -5,11 +5,11 @@ Push Button to capture pic to networked folder.
 
 sudo apt-get install python3-pip
 
-pip3 install opencv
+sudo pip3 install opencv
 
-pip3 install picamera
+sudo pip3 install picamera
 
-cd ~/Documents/Code/Python
+sudo cd ~/Documents/Code/Python
 
 git clone https://github.com/deddokatana/RasberryPiNetcam.git
 

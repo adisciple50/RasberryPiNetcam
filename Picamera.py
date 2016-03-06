@@ -1,7 +1,8 @@
 import os
-import subprocess
+import picamera
 
-output_folder = "~/Pictures"
+camera = picamera.PiCamera()
+output_folder = "/root/Pictures"
 
 def getNextFileName(output_folder):
     highest_num = 0
@@ -19,8 +20,8 @@ def getNextFileName(output_folder):
     return output_file_path
 
 def takePicture():
-    call = "raspistill -o %s" % (getNextFileName(output_folder) + ".jpg",)
-    print("Calling: ",call)
-    subprocess.call(call)
+    filename = getNextFileName(output_folder) + ".jpg"
+    print("Filename: ",filename)
+    camera.capture(filename)
 
 takePicture()

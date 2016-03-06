@@ -19,7 +19,7 @@ def getNextFileName(output_folder):
     return output_file_path
 
 def takePicture():
-    call = "raspistill -o %s" % (getNextFileName() + ".jpg",)
+    call = "raspistill -o %s" % (getNextFileName(output_folder) + ".jpg",)
     print("Calling: ",call)
     subprocess.call(call)
 

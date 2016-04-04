@@ -1,7 +1,11 @@
+#!/usr/bin/env python3
+
 import os
 import picamera
+from subprocess import call
+import picamera
 
-camera = picamera.PiCamera()
+# camera = picamera.PiCamera()
 output_folder = "/root/Pictures"
 
 def getNextFileName(output_folder):
@@ -22,6 +26,22 @@ def getNextFileName(output_folder):
 def takePicture():
     filename = getNextFileName(output_folder) + ".jpg"
     print("Filename: ",filename)
-    camera.capture(filename)
+    # os.system("raspistill -t 500 -o " + filename)
+    command = "raspistill -o " + filename
+    parameter = "-o " + filename
+    # call(["raspistill","-o",filename],shell=True)
+    call([command],shell=True)
 
-takePicture()
+def takePicture2():
+    filename = getNextFileName(output_folder) + ".jpg"
+    with picamera.PiCamera() as camera:
+        camera.resolution = (2592,1944)
+        camera.capture(filename)
+        camera.close()
+
+def streamcamera():
+    call("raspivid -w 640 -h 480 -o - -t 80000 |cvlc --play-and-exit -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8090}' :demux=h264",shell=True)
+    
+
+takePicture2()
+streamcamera()
